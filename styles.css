@@ -1,0 +1,119 @@
+body {
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 100%;
+  background-color: var(--White);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card-img img {
+  width: 375px;
+}
+.card-body-p1 {
+  letter-spacing: 3px;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 10px;
+}
+.card-body-p2 {
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.card-body h1 {
+  font-family: "Fraunces", serif;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: var(--Very-dark-blue);
+}
+
+.card-footer p {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: var(--Dark-cyan);
+  display: inline;
+}
+.discount {
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-left: 30px;
+}
+button {
+  display: block;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 0;
+  margin: 20px 0;
+  transition: background-color 0.2s ease;
+}
+button img {
+  margin-right: 6px;
+}
+
+.card-body,
+.card-footer {
+  margin: 0 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(32, 68, 54);
+}
+.card:hover {
+  box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.21);
+  transform: scale(1.01);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img img {
+    content: url(/images/image-product-desktop.jpg);
+    width: 300px;
+  }
+  .card-content {
+    width: 300px;
+  }
+  .card-body-p1{
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin: 30px 0 20px 0;
+  }
+  .card-body-p2 {
+    margin: 25px 0 20px 0;
+  }
+  
+}
